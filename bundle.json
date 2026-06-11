@@ -4,7 +4,7 @@
 	"module_type" : "bundles",
 	"app_type" : "tms",
 	"repo" : "https://github.com/sp-tms/tms-bundles-btc",
-	"version" : "0.0.0",
+	"version" : "0.1.0",
 	"bundle_modules" : 
 	{
 		"core" : 
@@ -181,7 +181,14 @@
 				"repo" : "https://github.com/sp-tms/tms-middlewares-tools-ipfilter"
 			}
 		],
-		"views" : [],
+		"views" : 
+		[
+			{
+				"name" : "Default",
+				"version" : "0.2.0",
+				"repo" : "https://github.com/sp-tms/tms-views-tools-default"
+			}
+		],
 		"bundles" : []
 	}
 }
