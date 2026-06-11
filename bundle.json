@@ -181,7 +181,14 @@
 				"repo" : "https://github.com/sp-tms/tms-middlewares-tools-ipfilter"
 			}
 		],
-		"views" : [],
+		"views" : 
+		[
+			{
+				"name" : "Default",
+				"version" : "0.2.0",
+				"repo" : "https://github.com/sp-tms/tms-views-tools-default"
+			}
+		],
 		"bundles" : []
 	}
 }
