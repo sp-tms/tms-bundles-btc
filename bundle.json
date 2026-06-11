@@ -1,17 +1,186 @@
 {
 	"name" : "BTC",
-	"description" : "",
+	"description" : "<p>Transport Management System bundle for Bagga Transport Company</p>",
 	"module_type" : "bundles",
 	"app_type" : "tms",
 	"repo" : "https://github.com/sp-tms/tms-bundles-btc",
 	"version" : "0.0.0",
 	"bundle_modules" : 
 	{
-		"core" : [],
-		"apptype" : [],
-		"components" : [],
-		"packages" : [],
-		"middlewares" : [],
+		"core" : 
+		{
+			"name" : "Core",
+			"version" : "0.0.0-rc.15",
+			"repo" : "https://github.com/sp-framework/core"
+		},
+		"apptype" : 
+		{
+			"name" : "Transport Management System",
+			"version" : "0.0.0",
+			"repo" : "https://github.com/sp-tms/tms"
+		},
+		"components" : 
+		[
+			{
+				"name" : "Api Client Services",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemapiclientservices"
+			},
+			
+			{
+				"name" : "Auth",
+				"version" : "0.2.0",
+				"repo" : "https://github.com/sp-tms/tms-components-tools-auth"
+			},
+			
+			{
+				"name" : "Charges",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-toolscharges"
+			},
+			
+			{
+				"name" : "Companies",
+				"version" : "0.3.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-companies"
+			},
+			
+			{
+				"name" : "Dashboards TMS",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-tools-dashboards"
+			},
+			
+			{
+				"name" : "Employees",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-employees"
+			},
+			
+			{
+				"name" : "Errors",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-tools-errors"
+			},
+			
+			{
+				"name" : "Filters",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-tools-systemfilters"
+			},
+			
+			{
+				"name" : "Geo Cities",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemgeocities"
+			},
+			
+			{
+				"name" : "Geo Countries",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemgeocountries"
+			},
+			
+			{
+				"name" : "Geo Postcodes",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemgeopostcodes"
+			},
+			
+			{
+				"name" : "Geo States",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemgeostates"
+			},
+			
+			{
+				"name" : "Home",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-tools-home"
+			},
+			
+			{
+				"name" : "Jobs",
+				"version" : "0.3.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-jobs"
+			},
+			
+			{
+				"name" : "Notifications",
+				"version" : "0.2.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemnotifications"
+			},
+			
+			{
+				"name" : "Storages",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemstorages"
+			},
+			
+			{
+				"name" : "Tools Expenses",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-toolsexpenses"
+			},
+			
+			{
+				"name" : "Units of measurements",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-toolsuom"
+			},
+			
+			{
+				"name" : "User Profile",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-systemusersprofile"
+			},
+			
+			{
+				"name" : "Vehicles",
+				"version" : "0.3.0",
+				"repo" : "https://github.com/sp-tms/tms-components-admin-vehicles"
+			}
+		],
+		"packages" : 
+		[
+			{
+				"name" : "Adminltetags",
+				"version" : "0.3.0",
+				"repo" : "https://github.com/sp-tms/tms-packages-viewtags-adminltetags"
+			},
+			
+			{
+				"name" : "Btcextractor",
+				"version" : "0.2.0",
+				"repo" : "https://github.com/sp-tms/tms-packages-tools-btcextractor"
+			}
+		],
+		"middlewares" : 
+		[
+			{
+				"name" : "Acl",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-middlewares-tools-acl"
+			},
+			
+			{
+				"name" : "AgentCheck",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-middlewares-tools-agentcheck"
+			},
+			
+			{
+				"name" : "Auth",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-middlewares-tools-auth"
+			},
+			
+			{
+				"name" : "IpFilter",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-middlewares-tools-ipfilter"
+			}
+		],
 		"views" : [],
 		"bundles" : []
 	}
